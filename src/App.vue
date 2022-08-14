@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view />
+    <!-- <homework :total="50" :num="5" @preDate="preDate" @nextDate="nextDate" @pageChange="request" /> -->
+    <!-- <homework :total="50" :num="5" @preDate="preDate" @nextDate="nextDate" /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import homework from './homework'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
+  // components: {
+  //   homework
+  // },
+  // data() {
+  //   return {
+  //     page: 1
+  //   }
+  // },
+  // methods: {
+  //   preDate() {
+  //     console.log('上一页数据')
+  //   },
+  //   nextDate() {
+  //     console.log('下一页数据')
+  //   },
+  //   request(page) {
+  //     console.log('发送请求', page)
+  //   }
+  // }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
